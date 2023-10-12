@@ -6,8 +6,27 @@ function App() {
   // let counter = 15;
   const [counter,setCounter] = useState(15);
   function addValue(){
-    if(counter < 20)
+    if(counter < 20){
       setCounter(counter+1);
+      
+      
+      
+      // setCounter(counter+1);
+      // setCounter(counter+1);
+      // setCounter(counter+1);
+      // setCounter(counter+1);
+      // setCounter(counter+1);
+      
+      
+      
+      
+      // setCounter(prevCounter => {console.log(prevCounter);return prevCounter+1});
+      // setCounter(prevCounter => {console.log(prevCounter);return prevCounter+1});
+      // setCounter(prevCounter => {console.log(prevCounter);return prevCounter+1});
+      // setCounter(prevCounter => {console.log(prevCounter);return prevCounter+1});
+
+    }
+      
     // setTimeout(() => {
     //   console.log(counter);
     // },1000);

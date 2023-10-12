@@ -7,4 +7,5 @@ let x = {
         },1000);
     }
 }
-x.print();
+import data from './data.json'
+console.log(data);
