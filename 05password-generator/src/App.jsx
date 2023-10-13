@@ -1,9 +1,12 @@
 
-import { useState } from 'react'
+import { memo, useMemo, useState } from 'react'
 import './App.css'
 import { useCallback } from 'react';
 import { useEffect } from 'react';
 import { useRef } from 'react';
+
+
+
 
 function App() {
   const [length,setLength] = useState(8);
@@ -12,7 +15,7 @@ function App() {
   const [password,setPassword] = useState("");
   const passwordRef = useRef(null);
   const passwordGenerator = useCallback(() => {
-    console.log('hi');
+    // console.log('hi');
     let pass = "";
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     if(numberAllowed) str += "0123456789";
@@ -33,13 +36,15 @@ function App() {
   //Since it is updating password which will reflect in UI & will cause infinitely re render again & again that is why we can't call it simply
   const copyPasswordToClipBoard = useCallback(()=> {
     passwordRef.current?.select();
-    passwordRef.current?.setSelectionRange(0,4);
+    // passwordRef.current?.setSelectionRange(0,4);
     window.navigator.clipboard.writeText(password);
   },[password]);
-
+  
   useEffect(() => {
     passwordGenerator();
   },[length,charAllowed,numberAllowed,passwordGenerator]);
+
+
   return (
       <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-800 text-orange-500'>
         <h1 className='text-white text-center my-3'>Password Generator</h1>
@@ -94,8 +99,9 @@ function App() {
           
         </div>
       </div>
-    
+      
   )
 }
 
 export default App
+
