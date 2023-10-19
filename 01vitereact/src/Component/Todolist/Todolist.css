@@ -1,0 +1,28 @@
+.stikeThrough {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.todoList-back {
+    display: flex;
+    justify-content: space-between;
+}
+.main {
+
+    display: flex;
+    flex-direction: column;
+    border: 2px dotted gray;
+    padding: 4px;
+}
+li{
+    margin: 16px;
+}
+button {
+    padding: 8px;
+    background-color: #2f69FE;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin: 0 16px;
+}

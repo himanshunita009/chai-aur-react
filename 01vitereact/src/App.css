@@ -1,0 +1,4 @@
+.main-back {
+    display: flex;
+    flex-direction: row;
+}

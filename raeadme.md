@@ -1,1 +1,1 @@
-Learning React JS
+This is the Front End Task i Himashu Seth final Year Student of MCA at NIT Agartala created it. This is the task assigned to me by Quicksell & Double click for Front End Assignment to be eligible for Front End Developer Role. I don't used any external Dependencies. The icons used in this is take from google icons.
